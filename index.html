@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="head-container col-6 offset-3">
+                <h1>Libarary</h1>
+                <p>This is the library project from The Odin Project, which stores a list of books and presents them as cards.</p>
+                <button class="add-book-btn btn btn-primary">Add Book</button>
+            </div>
+        </div>
+        
+        <div class="row modal-form">
+            <form class="book-form col-6 offset-3">
+                <span class="close">&times;</span>
+
+                <label for="title" class="form-label">Title</label>
+                <input type="text" name="title" id="title" class="form-control">
+                <label for="author" class="form-label">Author</label>
+                <input type="text" name="author" id="author" class="form-control">
+                <label for="page-count" class="form-label">Page Count</label>
+                <input type="number" name="page-count" id="page-count" class="form-control">
+                <label for="have-read" class="form-label">Have you read it yet?</label>
+                <select name="have-read" id="have-read" class="form-select">
+                    <option value="false" selected>No</option>
+                    <option value="true">Yes</option>
+                </select>
+                <button class="btn btn-primary mt-3">Add Book</button>
+            </form>
+        </div>
+        <div class="row books-container"></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
